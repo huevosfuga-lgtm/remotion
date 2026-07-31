@@ -11,15 +11,15 @@ export const Scene1Hook: React.FC = () => {
     <AbsoluteFill>
       <PhotoScene src={MEDIA.bowls} focus="center" zoom="in" />
 
-      {/* etiquetas sobre cada bowl */}
-      <div style={{ position: "absolute", top: 640, left: 70 }}>
-        <Pill frame={frame} start={14} bg={COLORS.orange} color={COLORS.paper} fontSize={34}>
-          🟠 PASTORIL
-        </Pill>
-      </div>
-      <div style={{ position: "absolute", top: 700, right: 70 }}>
+      {/* etiquetas sobre cada bowl (derecha = pastoril, más naranja) */}
+      <div style={{ position: "absolute", top: 600, left: 70 }}>
         <Pill frame={frame} start={22} bg="#6b6862" color={COLORS.paper} fontSize={34}>
           DE GÓNDOLA
+        </Pill>
+      </div>
+      <div style={{ position: "absolute", top: 600, right: 70 }}>
+        <Pill frame={frame} start={14} bg={COLORS.orange} color={COLORS.paper} fontSize={34}>
+          🟠 PASTORIL
         </Pill>
       </div>
 
@@ -33,7 +33,7 @@ export const Scene1Hook: React.FC = () => {
         }}
       >
         <Headline frame={frame} start={4} align="left" fontSize={98}>
-          El de la izquierda
+          El de la derecha
           <br />
           <Hl>no tiene filtro.</Hl>
         </Headline>

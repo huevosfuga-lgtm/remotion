@@ -48,8 +48,8 @@ El MP4 sale en formato H.264, compatible con Instagram Reels.
 
 | # | Escena | Foto | Texto en pantalla |
 |---|--------|------|-------------------|
-| 1 | **Hook** | Los 2 bowls | "El de la izquierda **no tiene filtro.**" · chip "Es 100% pastoril 🐔🌿" · etiquetas PASTORIL / DE GÓNDOLA |
-| 2 | **Comparación** | 3 huevos abiertos | "Mismo plato. **Otra historia.**" · chip "El color no miente 👀" |
+| 1 | **Hook** | Los 2 bowls | "El de la derecha **no tiene filtro.**" · chip "Es 100% pastoril 🐔🌿" · etiquetas DE GÓNDOLA (izq.) / PASTORIL (der., más naranja) |
+| 2 | **Comparación** | 3 huevos abiertos | "Mismo plato. **Otra historia.**" · callouts "PASTORIL x2" (yemas naranjas) y "COMERCIAL" (yema pálida) · chip "El color no miente 👀" |
 | 3 | **Prueba** | Yema en la mano | "Yema que se **planta parada.** 💪" · chip "Firme · Naranja · Real" |
 | 4 | **El porqué** | Yema / mano | "Gallinas sueltas, al sol, **comiendo pasto.** 🌿" · chip "Así sabe la comida de verdad 🍳" |
 | 5 | **Cierre / CTA** | Logo | "Huevos de gallinas pastoriles" · "**PROBÁ LA DIFERENCIA**" · @fuga · fuga.com.ar |

@@ -26,6 +26,18 @@ export const Scene2Compare: React.FC = () => {
         </Headline>
       </AbsoluteFill>
 
+      {/* callouts señalando cada yema: 2 pastoriles (naranja) + 1 comercial */}
+      <div style={{ position: "absolute", top: 560, left: 60 }}>
+        <Pill frame={frame} start={34} bg={COLORS.orange} color={COLORS.paper} fontSize={32} rotate={-4}>
+          🟠 PASTORIL x2
+        </Pill>
+      </div>
+      <div style={{ position: "absolute", top: 900, right: 60 }}>
+        <Pill frame={frame} start={44} bg="#6b6862" color={COLORS.paper} fontSize={32} rotate={4}>
+          COMERCIAL
+        </Pill>
+      </div>
+
       {/* remate inferior */}
       <AbsoluteFill
         style={{

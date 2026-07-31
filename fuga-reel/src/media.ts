@@ -13,13 +13,13 @@
 
 export const MEDIA = {
   // Foto 1 — Los dos bowls (yema pastoril naranja vs. industrial pálida)
-  bowls: "img1.svg",
-  // Foto 2 — La mano sosteniendo la yema firme y naranja
-  yolkHand: "img2.svg",
-  // Foto 3 — La yema en la mano sobre el bowl
-  yolkBowl: "img3.svg",
-  // Foto 4 — Los 3 huevos abiertos en el bowl (comparación de color)
-  threeEggs: "img4.svg",
+  bowls: "img1.jpg",
+  // Foto 2 — La mano sosteniendo la yema naranja intensa (Escena 3)
+  yolkHand: "img2.jpg",
+  // Foto 3 — La yema dorada en la mano sobre el bowl (Escena 4)
+  yolkBowl: "img3.jpg",
+  // Foto 4 — Los 3 huevos abiertos: 2 naranjas + 1 pálido (comparación)
+  threeEggs: "img4.jpg",
   // Logo Fuga
-  logo: "logo.svg",
+  logo: "logo.png",
 };
