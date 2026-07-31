@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8f8c86"/>
+      <stop offset="1" stop-color="#6f6c66"/>
+    </linearGradient>
+    <radialGradient id="deep4" cx="0.4" cy="0.32" r="0.85">
+      <stop offset="0" stop-color="#FFB733"/>
+      <stop offset="1" stop-color="#E4720B"/>
+    </radialGradient>
+    <radialGradient id="deep4b" cx="0.4" cy="0.32" r="0.85">
+      <stop offset="0" stop-color="#FFA827"/>
+      <stop offset="1" stop-color="#DC6A0A"/>
+    </radialGradient>
+    <radialGradient id="pale4" cx="0.4" cy="0.32" r="0.85">
+      <stop offset="0" stop-color="#FCE88E"/>
+      <stop offset="1" stop-color="#EBC745"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bg4)"/>
+  <!-- big white bowl -->
+  <ellipse cx="540" cy="960" rx="440" ry="440" fill="#ffffff"/>
+  <ellipse cx="540" cy="960" rx="370" ry="370" fill="#fbf6ea"/>
+  <!-- egg whites hint -->
+  <ellipse cx="540" cy="990" rx="330" ry="300" fill="#f6efdc" opacity="0.7"/>
+  <!-- three yolks -->
+  <circle cx="410" cy="840" r="115" fill="url(#deep4)"/>
+  <ellipse cx="375" cy="800" rx="40" ry="24" fill="#ffffff" opacity="0.3"/>
+  <circle cx="690" cy="880" r="112" fill="url(#pale4)"/>
+  <ellipse cx="656" cy="842" rx="40" ry="24" fill="#ffffff" opacity="0.4"/>
+  <circle cx="470" cy="1120" r="115" fill="url(#deep4b)"/>
+  <ellipse cx="436" cy="1082" rx="40" ry="24" fill="#ffffff" opacity="0.3"/>
+  <!-- replace tag -->
+  <g transform="translate(540 210)">
+    <rect x="-300" y="-46" width="600" height="92" rx="46" fill="#1A1508" opacity="0.82"/>
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#F7E7B0" text-anchor="middle">REEMPLAZAR CON TU FOTO 4</text>
+  </g>
+</svg>

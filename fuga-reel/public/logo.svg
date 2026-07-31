@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <circle cx="400" cy="400" r="390" fill="#F7E7B0"/>
+  <text x="400" y="470"
+    font-family="'Pacifico', 'Brush Script MT', cursive"
+    font-size="260" font-weight="700"
+    fill="#F2B90E" stroke="#1A1508" stroke-width="14"
+    paint-order="stroke" stroke-linejoin="round"
+    text-anchor="middle">Fuga</text>
+</svg>
