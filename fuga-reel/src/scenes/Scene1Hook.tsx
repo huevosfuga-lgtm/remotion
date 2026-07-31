@@ -1,6 +1,7 @@
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { PhotoScene } from "../components/PhotoScene";
 import { Headline, Hl, Pill } from "../components/ui";
+import { Badge } from "../components/brand-ui";
 import { COLORS } from "../brand";
 import { MEDIA } from "../media";
 
@@ -10,6 +11,13 @@ export const Scene1Hook: React.FC = () => {
   return (
     <AbsoluteFill>
       <PhotoScene src={MEDIA.bowls} focus="center" zoom="in" />
+
+      {/* badge de marca */}
+      <div style={{ position: "absolute", top: 150, left: 0, right: 0, display: "flex", justifyContent: "center" }}>
+        <Badge frame={frame} start={8} fontSize={28}>
+          Gallinas libres de jaula · literal
+        </Badge>
+      </div>
 
       {/* etiquetas sobre cada bowl (derecha = pastoril, más naranja) */}
       <div style={{ position: "absolute", top: 600, left: 70 }}>

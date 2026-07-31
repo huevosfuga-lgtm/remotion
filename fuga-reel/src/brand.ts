@@ -26,13 +26,27 @@ export const { fontFamily: BODY } = loadMontserrat("normal", {
 });
 
 export const COLORS = {
-  cream: "#F7E7B0", // fondo del logo
-  creamSoft: "#FBF1CC",
-  yellow: "#F2B90E", // amarillo dorado del logo
-  yellowBright: "#FFCE1F",
-  orange: "#F0891A", // yema pastoril
-  orangeDeep: "#E4720B",
-  ink: "#1A1508", // negro cálido del contorno
-  inkSoft: "#3A3116",
+  // Neutros de marca
+  cream: "#F1E7CD", // fondo crema de la web / logo
+  creamSoft: "#F7EEDA",
   paper: "#FFFDF5",
+  ink: "#1A1508", // negro cálido
+  inkSoft: "#3A3116",
+
+  // Verde oliva (color central de la marca Fuga)
+  green: "#47521F",
+  greenDeep: "#2E3417", // fondo oscuro de los posters
+  greenSoft: "#5A662A",
+
+  // Amarillos / ámbar
+  yellow: "#F2B90E", // amarillo del logo
+  yellowBright: "#FFCE1F",
+  amber: "#E3A11B", // mostaza de los posters
+
+  // Naranjas (yema)
+  orange: "#F0891A",
+  orangeDeep: "#E4720B",
+
+  // Acento rojo ladrillo
+  brick: "#8A2E1A",
 };

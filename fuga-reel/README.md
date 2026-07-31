@@ -1,8 +1,22 @@
-# 🍳 Fuga Reel — Huevos de gallinas pastoriles
+# 🍳 Fuga — Mini-campaña de Reels (huevos pastoriles)
 
-Reel vertical para Instagram (**1080×1920, 9:16, 30fps, ~13s**) hecho con
-[Remotion](https://remotion.dev), con el branding de **Fuga** (crema, amarillo
-dorado, naranja yema, tipografías retro) y listo para subir.
+Reels verticales para Instagram (**1080×1920, 9:16, 30fps**) hechos con
+[Remotion](https://remotion.dev), con el branding real de **Fuga** (verde
+oliva, crema, amarillo dorado, naranja yema, tipografías retro).
+
+## 🎬 Composiciones (elegí en el Studio / al renderizar)
+
+| ID | Qué es | Duración |
+|----|--------|----------|
+| **FugaReel** | Comparación pastoril vs góndola (el hook del huevo naranja) | ~13s |
+| **FugaEntrega** | Precios ($14.000 maple / $7.500 docena) + dónde entregamos (CABA, Zona Norte, Bancalari), animando los posters | ~8s |
+| **FugaManifiesto** | Manifiesto de marca: "Hay huevos. Y hay huevos.", pilares, "No son orgánicos. Son felices." | ~12s |
+
+```bash
+npx remotion render FugaReel        1-comparacion.mp4
+npx remotion render FugaEntrega     2-precios-entrega.mp4
+npx remotion render FugaManifiesto  3-manifiesto.mp4
+```
 
 ---
 

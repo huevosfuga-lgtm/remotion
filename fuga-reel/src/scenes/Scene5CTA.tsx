@@ -94,8 +94,8 @@ export const Scene5CTA: React.FC = () => {
       </div>
 
       <div style={{ marginTop: 10 }}>
-        <Pill frame={frame} start={58} bg={COLORS.ink} color={COLORS.yellowBright} fontSize={44}>
-          @fuga
+        <Pill frame={frame} start={58} bg={COLORS.green} color={COLORS.yellowBright} fontSize={42}>
+          Unite a la lista → @fuga
         </Pill>
       </div>
 
@@ -105,13 +105,14 @@ export const Scene5CTA: React.FC = () => {
           fontWeight: 700,
           fontSize: 30,
           color: COLORS.inkSoft,
+          textAlign: "center",
           opacity: interpolate(frame, [64, 78], [0, 1], {
             extrapolateLeft: "clamp",
             extrapolateRight: "clamp",
           }),
         }}
       >
-        fuga.com.ar
+        fuga.com.ar · CABA · Zona Norte
       </div>
     </AbsoluteFill>
   );
