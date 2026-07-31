@@ -8,6 +8,7 @@ import { Headline, Hl, Pill } from "../components/ui";
 import { PhotoScene } from "../components/PhotoScene";
 import { Grain, Pillar } from "../components/brand-ui";
 import { MEDIA } from "../media";
+import { FACTS } from "../facts";
 
 const S1 = 78, S2 = 78, S3 = 96, S4 = 80, S5 = 84, T = 12;
 export const MANIFIESTO_TOTAL = S1 + S2 + S3 + S4 + S5 - 4 * T;
@@ -59,10 +60,9 @@ const Pilares: React.FC = () => {
         Lo que nos hace <span style={{ color: COLORS.yellowBright }}>Fuga</span>
       </div>
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "70px 60px", maxWidth: 560 }}>
-        <Pillar frame={frame} start={14} icon="☀️" line1="Libertad" line2="para vivir" />
-        <Pillar frame={frame} start={22} icon="🌿" line1="Alimentación" line2="natural" />
-        <Pillar frame={frame} start={30} icon="🥰" line1="Gallinas" line2="felices" />
-        <Pillar frame={frame} start={38} icon="🥚" line1="Más sabor." line2="Más color." />
+        {FACTS.pillars.map((p, i) => (
+          <Pillar key={i} frame={frame} start={14 + i * 8} icon={p.icon} line1={p.line1} line2={p.line2} />
+        ))}
       </div>
     </AbsoluteFill>
   );

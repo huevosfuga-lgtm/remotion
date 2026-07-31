@@ -6,6 +6,7 @@ import { fadeUp, pop } from "../components/anim";
 import { PhotoScene } from "../components/PhotoScene";
 import { Grain } from "../components/brand-ui";
 import { MEDIA } from "../media";
+import { FACTS } from "../facts";
 
 // ── Duraciones ──
 const INTRO = 26;
@@ -48,7 +49,7 @@ const Outro: React.FC = () => {
         <span style={{ color: COLORS.yellowBright }}>lista de espera</span>
       </div>
       <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 38, color: COLORS.cream, textAlign: "center", opacity: b.opacity, translate: b.translate }}>
-        📍 CABA · Zona Norte · Bancalari
+        📍 {FACTS.delivery.zonesShort}
       </div>
       <div
         style={{
@@ -62,7 +63,7 @@ const Outro: React.FC = () => {
           opacity: interpolate(frame, [34, 48], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }),
         }}
       >
-        fuga.com.ar · @fuga
+        {FACTS.web} · {FACTS.handle}
       </div>
     </AbsoluteFill>
   );
