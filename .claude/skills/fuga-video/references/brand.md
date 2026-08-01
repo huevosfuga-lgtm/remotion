@@ -60,7 +60,7 @@ sueltas, al sol, comiendo pasto 🌿" · "Gallinas que se fugaron de la jaula �
 
 ## Datos de negocio (`src/facts.ts` → `FACTS`)
 
-- **Marca:** Fuga · **Handle:** @fuga · **Web:** fuga.com.ar
+- **Marca:** Fuga · **Instagram:** @huevosfuga · **Web:** fuga.com.ar
 - **Estado:** pre-lanzamiento (lista de espera). CTA: "Unite a la lista de espera".
 - **Productos:** Maple de 30 = **$14.000** · Docena = **$7.500**.
 - **Entrega:** desde **Pilar** → **CABA** (todos los barrios), **Zona Norte**

@@ -1,7 +1,7 @@
-import { Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { BODY, COLORS, DISPLAY } from "../brand";
 import { fadeUp, pop } from "./anim";
-import { MEDIA } from "../media";
+import { FugaLogo } from "./brand-ui";
 
 // Pill / chip redondeado con branding
 export const Pill: React.FC<{
@@ -96,7 +96,7 @@ export const Watermark: React.FC<{ appearAt: number; hideAt: number }> = ({ appe
         gap: 16,
       }}
     >
-      <Img src={staticFile(MEDIA.logo)} style={{ width: 96, height: 96, borderRadius: 999 }} />
+      <FugaLogo size={96} shadow={false} />
     </div>
   );
 };

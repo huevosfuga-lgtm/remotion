@@ -19,13 +19,13 @@ export const Scene3Firm: React.FC = () => {
           gap: 30,
         }}
       >
-        <Headline frame={frame} start={4} align="left" fontSize={100}>
-          Yema que se
+        <Headline frame={frame} start={4} align="left" fontSize={104}>
+          Así es una yema
           <br />
-          <Hl>planta parada.</Hl> 💪
+          <Hl>de verdad.</Hl> 🧡
         </Headline>
         <Pill frame={frame} start={28} bg={COLORS.orange} color={COLORS.paper} fontSize={40}>
-          Firme · Naranja · Real
+          Naranja de gallina feliz
         </Pill>
       </AbsoluteFill>
     </AbsoluteFill>

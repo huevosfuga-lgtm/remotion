@@ -1,6 +1,39 @@
-import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { BODY, COLORS, DISPLAY } from "../brand";
 import { fadeUp, pop } from "./anim";
+import { MEDIA } from "../media";
+
+// Logo Fuga "limpio": recorta el fino anillo negro del borde del PNG
+// escalando la imagen dentro de un círculo. shadow da separación sin
+// necesitar un borde duro.
+export const FugaLogo: React.FC<{
+  size: number;
+  scale?: number;
+  rotate?: number;
+  shadow?: boolean;
+}> = ({ size, scale = 1, rotate = 0, shadow = true }) => (
+  <div
+    style={{
+      width: size,
+      height: size,
+      borderRadius: 999,
+      overflow: "hidden",
+      backgroundColor: COLORS.cream,
+      boxShadow: shadow ? "0 18px 40px rgba(0,0,0,0.28)" : undefined,
+      scale: String(scale),
+      rotate: `${rotate}deg`,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      flexShrink: 0,
+    }}
+  >
+    <Img
+      src={staticFile(MEDIA.logo)}
+      style={{ width: "111%", height: "111%", objectFit: "cover" }}
+    />
+  </div>
+);
 
 // Textura de grano sutil (para fondos verdes tipo poster)
 export const Grain: React.FC<{ opacity?: number }> = ({ opacity = 0.12 }) => (

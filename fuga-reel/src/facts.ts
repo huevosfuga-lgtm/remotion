@@ -5,7 +5,7 @@
 
 export const FACTS = {
   brandName: "Fuga",
-  handle: "@fuga",
+  handle: "@huevosfuga",
   web: "fuga.com.ar",
 
   // Estado: pre-lanzamiento con lista de espera

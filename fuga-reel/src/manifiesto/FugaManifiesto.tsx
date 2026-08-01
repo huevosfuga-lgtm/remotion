@@ -1,4 +1,4 @@
-import { AbsoluteFill, Img, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { TransitionSeries, linearTiming, springTiming } from "@remotion/transitions";
 import { fade } from "@remotion/transitions/fade";
 import { slide } from "@remotion/transitions/slide";
@@ -6,7 +6,7 @@ import { COLORS, DISPLAY } from "../brand";
 import { fadeUp, pop } from "../components/anim";
 import { Headline, Hl, Pill } from "../components/ui";
 import { PhotoScene } from "../components/PhotoScene";
-import { Grain, Pillar } from "../components/brand-ui";
+import { Grain, Pillar, FugaLogo } from "../components/brand-ui";
 import { MEDIA } from "../media";
 import { FACTS } from "../facts";
 
@@ -98,13 +98,13 @@ const Cierre: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: COLORS.cream, justifyContent: "center", alignItems: "center", padding: "0 90px", gap: 30 }}>
       <Grain opacity={0.06} />
-      <Img src={staticFile(MEDIA.logo)} style={{ width: 360, height: 360, borderRadius: 999, scale: String(pop(frame, 2, 20)), filter: "drop-shadow(0 18px 40px rgba(26,21,8,0.28))" }} />
-      <div style={{ fontFamily: DISPLAY, fontSize: 72, color: COLORS.green, textTransform: "uppercase", letterSpacing: 1, textAlign: "center", opacity: a.opacity, translate: a.translate }}>
-        Directa. Honesta. <span style={{ color: COLORS.orange }}>Rural.</span>
+      <FugaLogo size={380} scale={pop(frame, 2, 20)} />
+      <div style={{ fontFamily: DISPLAY, fontSize: 96, color: COLORS.ink, textTransform: "uppercase", letterSpacing: 1, textAlign: "center", opacity: a.opacity, translate: a.translate }}>
+        Huevos <span style={{ color: COLORS.orange }}>de verdad.</span>
       </div>
-      <Pill frame={frame} start={40} bg={COLORS.green} color={COLORS.yellowBright} fontSize={42}>
-        Unite a la lista → @fuga
-      </Pill>
+      <div style={{ fontFamily: DISPLAY, fontSize: 68, color: COLORS.green, letterSpacing: 1, opacity: a.opacity, translate: a.translate }}>
+        {FACTS.handle}
+      </div>
     </AbsoluteFill>
   );
 };

@@ -1,19 +1,18 @@
-import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
-import { BODY, COLORS, DISPLAY, SCRIPT } from "../brand";
+import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
+import { BODY, COLORS, DISPLAY } from "../brand";
 import { fadeUp, pop } from "../components/anim";
-import { Pill } from "../components/ui";
-import { MEDIA } from "../media";
+import { FugaLogo } from "../components/brand-ui";
+import { FACTS } from "../facts";
 
-// CIERRE — Logo Fuga + llamado a la acción, sobre fondo crema de marca.
+// CIERRE — Termina en el logo con el Instagram debajo.
 export const Scene5CTA: React.FC = () => {
   const frame = useCurrentFrame();
-  const logoScale = pop(frame, 2, 22);
   const logoRot = interpolate(frame, [2, 26], [-8, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
-  const tag = fadeUp(frame, 30, 50, 18);
-  const cta = fadeUp(frame, 42, 60, 18);
+  const top = fadeUp(frame, 4, 40, 16);
+  const handle = fadeUp(frame, 34, 40, 16);
 
   return (
     <AbsoluteFill
@@ -22,17 +21,17 @@ export const Scene5CTA: React.FC = () => {
         justifyContent: "center",
         alignItems: "center",
         padding: "0 80px",
-        gap: 40,
+        gap: 44,
       }}
     >
       {/* puntitos decorativos tipo yema */}
       <AbsoluteFill style={{ overflow: "hidden" }}>
         {[
-          [140, 260],
-          [900, 360],
-          [190, 1520],
-          [880, 1580],
-          [520, 180],
+          [140, 300],
+          [900, 380],
+          [190, 1560],
+          [880, 1600],
+          [520, 210],
         ].map(([x, y], i) => (
           <div
             key={i}
@@ -50,69 +49,31 @@ export const Scene5CTA: React.FC = () => {
         ))}
       </AbsoluteFill>
 
-      <Img
-        src={staticFile(MEDIA.logo)}
-        style={{
-          width: 520,
-          height: 520,
-          borderRadius: 999,
-          scale: String(logoScale),
-          rotate: `${logoRot}deg`,
-          filter: "drop-shadow(0 22px 44px rgba(26,21,8,0.28))",
-        }}
-      />
-
-      <div
-        style={{
-          fontFamily: SCRIPT,
-          fontSize: 58,
-          color: COLORS.orangeDeep,
-          textAlign: "center",
-          opacity: tag.opacity,
-          translate: tag.translate,
-        }}
-      >
-        Huevos de gallinas pastoriles
-      </div>
-
       <div
         style={{
           fontFamily: DISPLAY,
-          fontSize: 120,
+          fontSize: 96,
           lineHeight: 0.98,
           color: COLORS.ink,
           textTransform: "uppercase",
           textAlign: "center",
           letterSpacing: 1,
-          opacity: cta.opacity,
-          translate: cta.translate,
+          opacity: top.opacity,
+          translate: top.translate,
         }}
       >
-        Probá la
-        <br />
-        diferencia
+        Probá la <span style={{ color: COLORS.orange }}>diferencia</span>
       </div>
 
-      <div style={{ marginTop: 10 }}>
-        <Pill frame={frame} start={58} bg={COLORS.green} color={COLORS.yellowBright} fontSize={42}>
-          Unite a la lista → @fuga
-        </Pill>
-      </div>
+      <FugaLogo size={480} scale={pop(frame, 2, 22)} rotate={logoRot} />
 
-      <div
-        style={{
-          fontFamily: BODY,
-          fontWeight: 700,
-          fontSize: 30,
-          color: COLORS.inkSoft,
-          textAlign: "center",
-          opacity: interpolate(frame, [64, 78], [0, 1], {
-            extrapolateLeft: "clamp",
-            extrapolateRight: "clamp",
-          }),
-        }}
-      >
-        fuga.com.ar · CABA · Zona Norte
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 10, opacity: handle.opacity, translate: handle.translate }}>
+        <div style={{ fontFamily: DISPLAY, fontSize: 72, color: COLORS.green, letterSpacing: 1 }}>
+          {FACTS.handle}
+        </div>
+        <div style={{ fontFamily: BODY, fontWeight: 700, fontSize: 32, color: COLORS.inkSoft, textAlign: "center" }}>
+          {FACTS.mainCTA} · {FACTS.web}
+        </div>
       </div>
     </AbsoluteFill>
   );
