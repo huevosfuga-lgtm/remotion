@@ -71,8 +71,8 @@ export const Scene5CTA: React.FC = () => {
         <div style={{ fontFamily: DISPLAY, fontSize: 72, color: COLORS.green, letterSpacing: 1 }}>
           {FACTS.handle}
         </div>
-        <div style={{ fontFamily: BODY, fontWeight: 700, fontSize: 32, color: COLORS.inkSoft, textAlign: "center" }}>
-          {FACTS.mainCTA} · {FACTS.web}
+        <div style={{ fontFamily: BODY, fontWeight: 700, fontSize: 34, color: COLORS.inkSoft, textAlign: "center" }}>
+          {FACTS.mainCTA}
         </div>
       </div>
     </AbsoluteFill>

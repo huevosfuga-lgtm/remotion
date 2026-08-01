@@ -41,7 +41,8 @@ Argentino, informal (**vos**), directo, con humor seco. Reglas:
 - **La "fuga".** El concepto es la gallina que se escapa de la jaula (mascota con
   rayas de preso). Jugá con escape/libertad.
 - **Pre-lanzamiento.** Todavía no venden al público general: el llamado a la
-  acción es **"Unite a la lista de espera"** (no "comprá").
+  acción es **"Unite a nuestro club"** (no "comprá"). No hay web pública todavía,
+  así que no pongas ninguna URL — el contacto es por Instagram (@huevosfuga).
 
 ## Frases de marca (`src/copy.ts` → `COPY`)
 
@@ -60,11 +61,10 @@ sueltas, al sol, comiendo pasto 🌿" · "Gallinas que se fugaron de la jaula �
 
 ## Datos de negocio (`src/facts.ts` → `FACTS`)
 
-- **Marca:** Fuga · **Instagram:** @huevosfuga · **Web:** fuga.com.ar
-- **Estado:** pre-lanzamiento (lista de espera). CTA: "Unite a la lista de espera".
+- **Marca:** Fuga · **Instagram:** @huevosfuga (sin web pública todavía).
+- **Estado:** pre-lanzamiento. CTA: "Unite a nuestro club".
 - **Productos:** Maple de 30 = **$14.000** · Docena = **$7.500**.
-- **Entrega:** desde **Pilar** → **CABA** (todos los barrios), **Zona Norte**
-  (barrios privados), **Bancalari**.
+- **Entrega:** **CABA** (todos los barrios) y **Zona Norte** (Bancalari, Pilar).
 - **Pilares:** ☀️ Libertad para vivir · 🌿 Alimentación natural · 🥰 Gallinas
   felices · 🥚 Más sabor, más color.
 

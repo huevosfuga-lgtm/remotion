@@ -105,7 +105,7 @@ para usarlo en el registro.
 - [ ] 1080×1920, 30fps, registrada en `Composition.tsx`.
 - [ ] Colores/frases/datos importados de `brand.ts`/`copy.ts`/`facts.ts`.
 - [ ] Texto dentro del margen seguro y con tamaño legible.
-- [ ] CTA = lista de espera (mientras sigan en pre-lanzamiento).
+- [ ] CTA = "Unite a nuestro club" (pre-lanzamiento). Sin URL: no hay web pública.
 - [ ] Stills revisados, después render entero.
 - [ ] Sin música con copyright embebida.
 - [ ] Commit de código + `public/` (sin `node_modules`) y push.

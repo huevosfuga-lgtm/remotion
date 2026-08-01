@@ -6,11 +6,11 @@
 export const FACTS = {
   brandName: "Fuga",
   handle: "@huevosfuga",
-  web: "fuga.com.ar",
+  // (sin web pública por ahora)
 
-  // Estado: pre-lanzamiento con lista de espera
+  // Estado: pre-lanzamiento
   status: "pre-launch",
-  mainCTA: "Unite a la lista de espera",
+  mainCTA: "Unite a nuestro club",
 
   // Productos
   products: [
@@ -30,9 +30,8 @@ export const FACTS = {
 
   // Entrega
   delivery: {
-    origin: "Pilar",
-    zones: ["CABA (todos los barrios)", "Zona Norte (barrios privados)", "Bancalari"],
-    zonesShort: "CABA · Zona Norte · Bancalari",
+    zones: ["CABA (todos los barrios)", "Zona Norte (Bancalari, Pilar)"],
+    zonesShort: "CABA · Zona Norte",
     tagline: "Llevamos lo mejor del campo, hasta tu casa.",
   },
 
