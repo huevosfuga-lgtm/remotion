@@ -41,13 +41,18 @@ Argentino, informal (**vos**), directo, con humor seco. Reglas:
 - **La "fuga".** El concepto es la gallina que se escapa de la jaula (mascota con
   rayas de preso). Jugá con escape/libertad.
 - **Pre-lanzamiento.** Todavía no venden al público general: el llamado a la
-  acción es **"Unite a nuestro club"** (no "comprá"). No hay web pública todavía,
-  así que no pongas ninguna URL — el contacto es por Instagram (@huevosfuga).
+  acción es **"Te invitamos a probarnos"** (no "comprá"). No hay web pública
+  todavía, así que no pongas ninguna URL — el contacto es por Instagram
+  (@huevosfuga).
+- **Comparaciones honestas.** El huevo con el que comparamos es **"libre de
+  jaula"** (no "de góndola"): que nuestro pastoril sea aún más naranja que un
+  libre de jaula hace el contraste más fuerte. Evitá decir "no son orgánicos"
+  (confunde); el diferenciador es **"no son de jaula, son felices"**.
 
 ## Frases de marca (`src/copy.ts` → `COPY`)
 
 **Titulares:** "Hay huevos. Y hay huevos." · "Este amarillo no es filtro." ·
-"No son orgánicos. Son felices." · "Huevos libres de jaula. Literal." · "Más
+"No son de jaula. Son felices." · "Huevos libres de jaula. Literal." · "Más
 sabor. Más color." · "Directa. Honesta. Rural."
 
 **Hooks:** "El de la derecha no tiene filtro." · "¿Por qué esta yema es tan
@@ -62,7 +67,7 @@ sueltas, al sol, comiendo pasto 🌿" · "Gallinas que se fugaron de la jaula �
 ## Datos de negocio (`src/facts.ts` → `FACTS`)
 
 - **Marca:** Fuga · **Instagram:** @huevosfuga (sin web pública todavía).
-- **Estado:** pre-lanzamiento. CTA: "Unite a nuestro club".
+- **Estado:** pre-lanzamiento. CTA: "Te invitamos a probarnos".
 - **Productos:** Maple de 30 = **$14.000** · Docena = **$7.500**.
 - **Entrega:** **CABA** (todos los barrios) y **Zona Norte** (Bancalari, Pilar).
 - **Pilares:** ☀️ Libertad para vivir · 🌿 Alimentación natural · 🥰 Gallinas

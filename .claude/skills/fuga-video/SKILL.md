@@ -43,7 +43,7 @@ composición nueva está en **[references/building-blocks.md](references/buildin
 4. **Voz de marca.** Argentino, informal (vos), directo, con humor. Mostramos la
    diferencia (el color naranja de la yema) en lugar de afirmarla. La marca es la
    "fuga": la gallina que se escapa de la jaula. Están en **pre-lanzamiento**, así
-   que el CTA por defecto es **"Unite a nuestro club"**, no "comprá ahora".
+   que el CTA por defecto es **"Te invitamos a probarnos"**, no "comprá ahora".
 5. **Seguridad tipográfica.** Texto principal ≥ 84px, apoyo ≥ 44px, y respetá un
    margen de ~80px a los lados. En video se lee distinto que en una web.
 

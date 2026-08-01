@@ -77,7 +77,7 @@ const Felices: React.FC = () => {
     <AbsoluteFill style={{ backgroundColor: COLORS.greenDeep, justifyContent: "center", alignItems: "flex-start", padding: "0 90px", gap: 10 }}>
       <Grain />
       <div style={{ fontFamily: DISPLAY, fontSize: 96, lineHeight: 1.0, color: COLORS.cream, textTransform: "uppercase", opacity: a.opacity, translate: a.translate }}>
-        No son orgánicos.
+        No son de jaula.
       </div>
       <div style={{ fontFamily: DISPLAY, fontSize: 128, lineHeight: 1.0, color: COLORS.yellowBright, textTransform: "uppercase", opacity: b.opacity, translate: b.translate }}>
         Son felices.

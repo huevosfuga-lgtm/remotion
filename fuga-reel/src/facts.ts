@@ -10,7 +10,7 @@ export const FACTS = {
 
   // Estado: pre-lanzamiento
   status: "pre-launch",
-  mainCTA: "Unite a nuestro club",
+  mainCTA: "Te invitamos a probarnos",
 
   // Productos
   products: [

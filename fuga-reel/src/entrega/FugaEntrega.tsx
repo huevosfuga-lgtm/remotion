@@ -112,10 +112,10 @@ const Outro: React.FC = () => {
     <AbsoluteFill style={{ backgroundColor: COLORS.greenDeep, justifyContent: "center", alignItems: "center", padding: "0 90px", gap: 34 }}>
       <Grain />
       <FugaLogo size={340} scale={pop(frame, 2, 20)} />
-      <div style={{ fontFamily: DISPLAY, fontSize: 96, lineHeight: 0.98, color: COLORS.cream, textTransform: "uppercase", textAlign: "center", opacity: a.opacity, translate: a.translate }}>
-        Unite a
+      <div style={{ fontFamily: DISPLAY, fontSize: 92, lineHeight: 0.98, color: COLORS.cream, textTransform: "uppercase", textAlign: "center", opacity: a.opacity, translate: a.translate }}>
+        Te invitamos
         <br />
-        <span style={{ color: COLORS.yellowBright }}>nuestro club</span>
+        <span style={{ color: COLORS.yellowBright }}>a probarnos</span>
       </div>
       <div style={{ fontFamily: DISPLAY, fontSize: 68, color: COLORS.yellowBright, letterSpacing: 1, opacity: interpolate(frame, [32, 44], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>
         {FACTS.handle}

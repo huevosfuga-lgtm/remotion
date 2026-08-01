@@ -21,8 +21,8 @@ export const Scene1Hook: React.FC = () => {
 
       {/* etiquetas sobre cada bowl (derecha = pastoril, más naranja) */}
       <div style={{ position: "absolute", top: 600, left: 70 }}>
-        <Pill frame={frame} start={22} bg="#6b6862" color={COLORS.paper} fontSize={34}>
-          DE GÓNDOLA
+        <Pill frame={frame} start={22} bg="#6b6862" color={COLORS.paper} fontSize={32}>
+          LIBRE DE JAULA
         </Pill>
       </div>
       <div style={{ position: "absolute", top: 600, right: 70 }}>

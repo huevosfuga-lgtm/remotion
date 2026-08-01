@@ -10,7 +10,7 @@ export const COPY = {
   taglines: [
     "Hay huevos. Y hay huevos.",
     "Este amarillo no es filtro.",
-    "No son orgánicos. Son felices.",
+    "No son de jaula. Son felices.",
     "Huevos libres de jaula. Literal.",
     "Más sabor. Más color.",
     "Directa. Honesta. Rural.",
