@@ -20,6 +20,8 @@ export const MEDIA = {
   yolkBowl: "img3.jpg",
   // Foto 4 — Los 3 huevos abiertos: 2 naranjas + 1 pálido (comparación)
   threeEggs: "img4.jpg",
+  // Huevos fritos: izquierda comercial (pálido) · derecha pastoril (naranja)
+  fried: "img_fritos.jpg",
   // Logo Fuga
   logo: "logo.png",
 };
