@@ -20,6 +20,11 @@ catálogo `fuga-reel/ASSETS.md`. Con eso proponés ideas sin que expliquen nada.
    disco (no entran al contexto); decodificá con:
    `jq -r '.content' <archivo-guardado> | base64 -d > public/<nombre>`
    (mismo patrón que ya usamos para las fotos y el logo).
+   - **Límite del conector: 10 MB por archivo.** Los videos suelen superarlo (y el
+     proxy bloquea la descarga directa de `drive.google.com`). Si un video pesa más
+     de 10 MB, pedile al usuario una versión < 10 MB (recortada/comprimida) — o que
+     suba directamente el fragmento que quiere usar. Los HEIC de iPhone sí entran
+     (< 10 MB); convertí HEIC→JPG con Pillow + `pillow_heif.register_heif_opener()`.
 
 ## Entender un archivo nuevo
 

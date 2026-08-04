@@ -22,6 +22,15 @@ export const MEDIA = {
   threeEggs: "img4.jpg",
   // Huevos fritos: izquierda comercial (pálido) · derecha pastoril (naranja)
   fried: "img_fritos.jpg",
+
+  // ── Campo / gallinas / producto (subidas 2026-08-04) ──
+  maples: "foto_maples.jpg", // maples de huevos frescos apilados
+  hensField1: "gallinas_campo1.jpg", // gallinas sueltas en el campo (cerco)
+  hensField2: "gallinas_campo2.jpg", // gallinas picoteando pasto (nublado)
+  henHouse1: "gallinero_tunel1.jpg", // interior del gallinero túnel
+  henHouse2: "gallinero_tunel2.jpg", // túnel lleno de gallinas (a lo largo)
+  henPortrait: "gallina_retrato.jpg", // primer plano de una gallina (hero)
+
   // Logo Fuga
   logo: "logo.png",
 };
