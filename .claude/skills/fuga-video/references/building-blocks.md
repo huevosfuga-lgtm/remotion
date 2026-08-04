@@ -108,4 +108,7 @@ para usarlo en el registro.
 - [ ] CTA = "Te invitamos a probarnos" (pre-lanzamiento). Sin URL: no hay web.
 - [ ] Stills revisados, después render entero.
 - [ ] Sin música con copyright embebida.
+- [ ] Peso del MP4 < 30 MB para poder entregarlo por chat. Los reels con muchas
+      fotos pueden pasarse; renderizá con `--crf=26` (baja el peso ~3-4× sin
+      pérdida visible). Ej: `npx remotion render FugaCampo out.mp4 --crf=26`.
 - [ ] Commit de código + `public/` (sin `node_modules`) y push.

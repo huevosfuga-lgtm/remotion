@@ -2,6 +2,7 @@ import { Composition } from "remotion";
 import { FugaReel, TOTAL } from "./FugaReel";
 import { FugaEntrega, ENTREGA_TOTAL } from "./entrega/FugaEntrega";
 import { FugaManifiesto, MANIFIESTO_TOTAL } from "./manifiesto/FugaManifiesto";
+import { FugaCampo, CAMPO_TOTAL } from "./campo/FugaCampo";
 
 // Todos los Reels: vertical 1080x1920 (9:16), 30fps.
 export const MyComposition = () => {
@@ -27,6 +28,14 @@ export const MyComposition = () => {
         id="FugaManifiesto"
         component={FugaManifiesto}
         durationInFrames={MANIFIESTO_TOTAL}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="FugaCampo"
+        component={FugaCampo}
+        durationInFrames={CAMPO_TOTAL}
         fps={30}
         width={1080}
         height={1920}
