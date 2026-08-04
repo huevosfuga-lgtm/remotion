@@ -29,6 +29,15 @@ inventar cosas fuera de marca.
 El catálogo de componentes reutilizables y el paso a paso para armar una
 composición nueva está en **[references/building-blocks.md](references/building-blocks.md)**.
 
+**Assets (fotos y videos).** El usuario sube material a su Drive y NO debería
+tener que explicar qué es cada cosa. Antes de pedir aclaraciones, mirá el
+catálogo `fuga-reel/ASSETS.md` y, si hay archivos nuevos o te piden ideas,
+sincronizá y analizá siguiendo
+**[references/assets-workflow.md](references/assets-workflow.md)** — incluye cómo
+"leer" un **video** por fotogramas con `scripts/analyze-video.sh` (una grilla de
+contacto que resume el video en una sola imagen). Con eso también generás ideas
+a partir de lo ya subido.
+
 ## Reglas de oro (por qué importan)
 
 1. **Formato Reel: 1080×1920, 30fps.** Es vertical para que ocupe toda la
@@ -52,9 +61,10 @@ composición nueva está en **[references/building-blocks.md](references/buildin
 1. **Definí el objetivo y el guion.** ¿Qué tiene que sentir/hacer quien lo ve?
    Elegí un ángulo (comparación, precio, receta, manifiesto…). Sacá el hook y las
    frases del banco en `src/copy.ts` (o agregá nuevas ahí si aportan).
-2. **Conseguí los assets.** Fotos/logo van en `public/`. Si el usuario los tiene
-   en Google Drive, bajalos con el conector de Drive (ver nota de Drive abajo).
-   Registralos en `src/media.ts`.
+2. **Conseguí y entendé los assets.** Sincronizá el Drive y catalogá lo nuevo
+   (imágenes y videos) con [references/assets-workflow.md](references/assets-workflow.md).
+   Las fotos/logo van en `public/` y se registran en `src/media.ts`; el catálogo
+   vive en `fuga-reel/ASSETS.md`. No pidas que te expliquen un archivo: analizalo.
 3. **Armá la composición** siguiendo
    [references/building-blocks.md](references/building-blocks.md): creá
    `src/<nombre>/Fuga<Nombre>.tsx`, escenas con `TransitionSeries`, y exportá el
