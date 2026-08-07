@@ -42,6 +42,7 @@ referencia de estilo**, no se embeben en los videos.
 | `FugaEntrega` | Precios + dónde entregamos (texto animado) | ~10s |
 | `FugaManifiesto` | Manifiesto de marca ("Hay huevos. Y hay huevos.") | ~12s |
 | `FugaCampo` | "Del campo a tu mesa" (gallinas → producto → plato) | ~16s |
+| `FugaMaples` | "Recién juntados" — los maples + precios | ~8s |
 
 ## Ideas de videos con lo que ya hay
 
