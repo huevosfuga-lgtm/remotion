@@ -34,6 +34,10 @@ export const MEDIA = {
   // Logo Fuga
   logo: "logo.png",
 
-  // Audio propio (para el video "vehículo" que sube a Instagram)
+  // Audio propio (voz en off)
   audio: "audio_fuga.m4a",
+
+  // Clips de video (verticales)
+  clipBreak: "clip_b.mp4", // rompiendo un huevo en la mano (al aire libre)
+  clipYolks: "clip_a.mp4", // bowl lleno de yemas naranjas + mano levantando una
 };

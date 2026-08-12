@@ -16,6 +16,11 @@ OUT="${2:-$(dirname "$VIDEO")/frames-$(basename "${VIDEO%.*}")}"
 N="${3:-9}"
 COLS=3
 
+# Absolutizar rutas: el runner hace `cd` al proyecto, así que las rutas
+# relativas se romperían.
+VIDEO="$(cd "$(dirname "$VIDEO")" && pwd)/$(basename "$VIDEO")"
+mkdir -p "$OUT"; OUT="$(cd "$OUT" && pwd)"
+
 # Proyecto Remotion (trae ffmpeg/ffprobe mínimos vía `npx remotion`).
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJ="${FUGA_PROJ:-$SCRIPT_DIR/../../../../fuga-reel}"

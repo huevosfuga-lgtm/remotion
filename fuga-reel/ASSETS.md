@@ -43,6 +43,16 @@ referencia de estilo**, no se embeben en los videos.
 | `FugaManifiesto` | Manifiesto de marca ("Hay huevos. Y hay huevos.") | ~12s |
 | `FugaCampo` | "Del campo a tu mesa" (gallinas → producto → plato) | ~16s |
 | `FugaMaples` | "Recién juntados" — los maples + precios | ~8s |
+| `FugaAudio` | Tarjeta de marca + ecualizador con audio propio (34s) | ~34s |
+| `FugaVoz` | 2 clips (romper huevo + bowl de yemas) con voz en off | ~34s |
+
+## Clips de video (en `public/`)
+
+| Archivo | Qué muestra | Formato |
+|---------|-------------|---------|
+| `clip_b.mp4` | Rompiendo un huevo en la mano sobre un bowl, al aire libre (campo de fondo). | Vertical, 15s |
+| `clip_a.mp4` | Bowl metálico lleno de yemas naranjas + mano levantando una. | Vertical, 13s |
+| `audio_fuga.m4a` | Voz en off propia (~34s). | Audio |
 
 ## Ideas de videos con lo que ya hay
 
