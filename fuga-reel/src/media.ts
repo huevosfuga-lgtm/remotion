@@ -33,4 +33,7 @@ export const MEDIA = {
 
   // Logo Fuga
   logo: "logo.png",
+
+  // Audio propio (para el video "vehículo" que sube a Instagram)
+  audio: "audio_fuga.m4a",
 };

@@ -4,6 +4,7 @@ import { FugaEntrega, ENTREGA_TOTAL } from "./entrega/FugaEntrega";
 import { FugaManifiesto, MANIFIESTO_TOTAL } from "./manifiesto/FugaManifiesto";
 import { FugaCampo, CAMPO_TOTAL } from "./campo/FugaCampo";
 import { FugaMaples, MAPLES_TOTAL } from "./maples/FugaMaples";
+import { FugaAudio, AUDIO_TOTAL } from "./audio/FugaAudio";
 
 // Todos los Reels: vertical 1080x1920 (9:16), 30fps.
 export const MyComposition = () => {
@@ -45,6 +46,14 @@ export const MyComposition = () => {
         id="FugaMaples"
         component={FugaMaples}
         durationInFrames={MAPLES_TOTAL}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="FugaAudio"
+        component={FugaAudio}
+        durationInFrames={AUDIO_TOTAL}
         fps={30}
         width={1080}
         height={1920}
