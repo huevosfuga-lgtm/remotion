@@ -40,4 +40,5 @@ export const MEDIA = {
   // Clips de video (verticales)
   clipBreak: "clip_b.mp4", // rompiendo un huevo en la mano (al aire libre)
   clipYolks: "clip_a.mp4", // bowl lleno de yemas naranjas + mano levantando una
+  clipHens: "clip_hens.mp4", // gallinas: gallinero → sueltas en el campo (18.6s)
 };

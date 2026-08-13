@@ -8,11 +8,16 @@ import { MEDIA } from "../media";
 import { FACTS } from "../facts";
 
 // Largos (frames @30). El total = largo del audio (voz en off ~33.77s).
-const INTRO = 36;
-const CLIP_B = 454; // 15.145s — rompiendo un huevo
-const CLIP_A = 388; // 12.933s — bowl de yemas
+// Las gallinas ocupan el segundo 12 → 27 del reel (hueco de 15s); los dos
+// clips de los extremos (romper huevo y yemas) se acortan para mantener el
+// largo total.
+const INTRO = 36; // 1.2s
+const BREAK = 324; // ~10.8s (acortado) — termina en el seg 12
+const HENS = 450; // 15s — segundo 12 → 27 del reel
+const HENS_TRIM = 108; // el clip de gallinas arranca en su seg 3.6 (usa 3.6→18.6)
+const YOLKS = 68; // ~2.3s (acortado)
 const AUDIO_FRAMES = Math.round(33.77 * 30); // 1013
-const OUTRO = AUDIO_FRAMES - INTRO - CLIP_B - CLIP_A; // ~135
+const OUTRO = AUDIO_FRAMES - INTRO - BREAK - HENS - YOLKS; // 135
 export const VOZ_TOTAL = AUDIO_FRAMES;
 
 // Marca de agua (logo arriba-izquierda) para los clips
@@ -29,11 +34,12 @@ const ClipScene: React.FC<{
   caption: React.ReactNode;
   capBg?: string;
   capColor?: string;
-}> = ({ src, len, caption, capBg = COLORS.orange, capColor = COLORS.paper }) => {
+  trimBefore?: number;
+}> = ({ src, len, caption, capBg = COLORS.orange, capColor = COLORS.paper, trimBefore = 0 }) => {
   const frame = useCurrentFrame();
   return (
     <AbsoluteFill style={{ backgroundColor: COLORS.greenDeep }}>
-      <Video src={staticFile(src)} volume={0} durationInFrames={len} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      <Video src={staticFile(src)} volume={0} trimBefore={trimBefore} durationInFrames={len} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       <Scrim from="rgba(10,8,2,0.6)" height="34%" side="bottom" />
       <Mark />
       <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", padding: "0 70px 150px" }}>
@@ -91,13 +97,16 @@ export const FugaVoz: React.FC = () => {
       <Sequence from={0} durationInFrames={INTRO} name="Intro">
         <Intro />
       </Sequence>
-      <Sequence from={INTRO} durationInFrames={CLIP_B} name="Romper">
-        <ClipScene src={MEDIA.clipBreak} len={CLIP_B} caption="🥚 Recién del campo" capBg={COLORS.green} capColor={COLORS.cream} />
+      <Sequence from={INTRO} durationInFrames={BREAK} name="Romper">
+        <ClipScene src={MEDIA.clipBreak} len={BREAK} caption="🥚 Recién del campo" capBg={COLORS.green} capColor={COLORS.cream} />
       </Sequence>
-      <Sequence from={INTRO + CLIP_B} durationInFrames={CLIP_A} name="Yemas">
-        <ClipScene src={MEDIA.clipYolks} len={CLIP_A} caption="🧡 Puras yemas naranjas" />
+      <Sequence from={INTRO + BREAK} durationInFrames={HENS} name="Gallinas">
+        <ClipScene src={MEDIA.clipHens} len={HENS} trimBefore={HENS_TRIM} caption="🌿 Gallinas sueltas, felices" capBg={COLORS.green} capColor={COLORS.cream} />
       </Sequence>
-      <Sequence from={INTRO + CLIP_B + CLIP_A} durationInFrames={OUTRO} name="Cierre">
+      <Sequence from={INTRO + BREAK + HENS} durationInFrames={YOLKS} name="Yemas">
+        <ClipScene src={MEDIA.clipYolks} len={YOLKS} caption="🧡 Puras yemas naranjas" />
+      </Sequence>
+      <Sequence from={INTRO + BREAK + HENS + YOLKS} durationInFrames={OUTRO} name="Cierre">
         <Outro />
       </Sequence>
     </AbsoluteFill>
